@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid bg-success">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <form action="" method="POST">
+                {%csrf_token%}
+
+
+                {{form.as_p}}
+
+
+
+
+
+                <div class="mb-3">
+                    <button type="submit">ADD</button>
+                </div>
+                <div class="mb-3">
+                    <label for="">result</label>
+                    {{result}}
+
+
+                </div>
+            </form>
+        </div>
+        <div class="col-4">
+<!--            <h3>{{result}}</h3>-->
+        </div>
+    </div>
+</div>
+</body>
+</html>
